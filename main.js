@@ -174,7 +174,7 @@
 			document.title = `${document.title}`;
 
 		let bodyHTML = htmlSanity(a.body);
-		if (isNegativeLookBehindSupported) {
+		if (!isNegativeLookBehindSupported) {
 			bodyHTML = '<span style="color:red">一部置き換えが無効化されました。最新のブラウザを使ってください。</span>' + bodyHTML
 		}
 
